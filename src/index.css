@@ -1,0 +1,11 @@
+/* Global index overrides - styles are defined in css/App.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
