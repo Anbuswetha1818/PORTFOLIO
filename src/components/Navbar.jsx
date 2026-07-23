@@ -95,7 +95,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="mobile-nav-toggle d-xl-none" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} style={{ cursor: 'pointer' }}>
+          <div className="mobile-nav-toggle d-xl-none" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} style={{ cursor: 'pointer', color: 'var(--heading-color)' }}>
             {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </div>
         </nav>
