@@ -2171,6 +2171,12 @@ section,
   opacity: 1;
 }
 
+@media (max-width: 991px) {
+  .portfolio .portfolio-card .portfolio-image-container .portfolio-overlay {
+    opacity: 1;
+  }
+}
+
 .portfolio .portfolio-bottom {
   margin-top: 60px;
   padding-top: 40px;
