@@ -142,7 +142,7 @@ const Projects = () => {
       {/* Project Details Modal */}
       {selectedProject && (
         <div className="custom-modal-backdrop" onClick={() => setSelectedProject(null)} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.65)', zIndex: 1050, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div className="custom-modal p-4 p-md-5" onClick={(e) => e.stopPropagation()} style={{ background: 'var(--surface-color)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '16px', maxWidth: '700px', width: '90%', position: 'relative', maxH: '90vh', overflowY: 'auto' }}>
+          <div className="custom-modal p-3 p-md-5" onClick={(e) => e.stopPropagation()} style={{ background: 'var(--surface-color)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '16px', maxWidth: '700px', width: '92%', position: 'relative', maxHeight: '80vh', overflowY: 'auto' }}>
             <div className="custom-modal-close" onClick={() => setSelectedProject(null)} style={{ position: 'absolute', top: '15px', right: '15px', cursor: 'pointer', fontSize: '1.5rem', color: 'var(--heading-color)' }}>
               <i className="bi bi-x-lg"></i>
             </div>
