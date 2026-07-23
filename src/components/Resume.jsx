@@ -42,12 +42,11 @@ const Resume = () => {
                     <p className="company-name">VDart Academy • Tiruchirappalli, TN</p>
                     <span className="duration">June 2026 - Present</span>
                     <p className="description">
-                      Developing the full-stack InternFlow platform. Collaborating on end-to-end features, dashboard implementations, and deployments.
+                      Developing the Student Intern Management System (SIMS) and collaborating on end-to-end features, dashboard implementations, and deployments.
                     </p>
                     <ul className="small ps-3 mb-3" style={{ color: 'color-mix(in srgb, var(--default-color), transparent 30%)' }}>
-                      <li>Designed role-based admin and intern dashboards.</li>
-                      <li>Built responsive web modules integrated with backend APIs.</li>
-                      <li>Implemented JWT authentication with role-based access control.</li>
+                      <li>Developed a full-stack Student Intern Management System (SIMS) using React, Django REST Framework, PostgreSQL, and JWT authentication with role-based access control.</li>
+                      <li>Building role-based dashboards, integrating APIs, and collaborating on end-to-end feature development from UI design to deployment.</li>
                     </ul>
                     <div className="skills-tags">
                       <span className="skill-tag">React</span>
@@ -73,8 +72,8 @@ const Resume = () => {
                       Developed database-driven Python applications using Object-Oriented Programming (OOP) and graphical interfaces.
                     </p>
                     <ul className="small ps-3 mb-3" style={{ color: 'color-mix(in srgb, var(--default-color), transparent 30%)' }}>
-                      <li>Applied modular coding structures and GUI development.</li>
-                      <li>Optimized relational database queries using MySQL integration.</li>
+                      <li>Developed Python application using OOP, functions, modular programming, GUI development, and MySQL integration.</li>
+                      <li>Applied core Python and database concepts in a hands-on project to build practical, data-driven solutions.</li>
                     </ul>
                     <div className="skills-tags">
                       <span className="skill-tag">Python</span>
