@@ -2301,6 +2301,15 @@ section,
   box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
+.contact .php-email-form .form-control:-webkit-autofill,
+.contact .php-email-form .form-control:-webkit-autofill:hover,
+.contact .php-email-form .form-control:-webkit-autofill:focus,
+.contact .php-email-form .form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--background-color) inset !important;
+  -webkit-text-fill-color: var(--default-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .contact .php-email-form .form-control::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
