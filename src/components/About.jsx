@@ -93,7 +93,7 @@ const About = () => {
                   Motivated Full Stack Developer with industry experience building web applications using Python, React, Next.js, Node.js, and REST APIs. Skilled in agile methodologies and cloud technologies, with strong problem-solving ability.
                 </p>
                 <p>
-                  I engineer production-grade full-stack solutions, from responsive client interfaces with React and Next.js to robust backend microservices using Node.js, Express, Django REST Framework, and relational databases (MySQL, PostgreSQL). Having delivered live production systems including Laboratory Information Management Systems (ONEOMICS-LIMS), soil analytics platforms (Thaimann), and high-accuracy AI forecasting models (EnergyStream AI), I bring proven hands-on industry expertise to solve real-world development challenges.
+                  I engineer production-grade full-stack solutions, from responsive client interfaces with React and Next.js to robust backend microservices using Node.js, Express, Django REST Framework, and relational databases (MySQL, PostgreSQL). Having built enterprise portals like InternFlow and high-accuracy AI forecasting models (EnergyStream AI), I bring proven hands-on industry expertise to solve real-world development challenges.
                 </p>
               </div>
 

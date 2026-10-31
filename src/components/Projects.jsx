@@ -1,94 +1,13 @@
 import React, { useState } from 'react';
 import energystreamAiImg from '../assets/energystream_ai.png';
 import internflowImg from '../assets/internflow.png';
-import oneomicsLimsImg from '../assets/oneomics_lims.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = [
     {
-      id: 1,
-      title: 'ONEOMICS-LIMS (Delphina)',
-      image: oneomicsLimsImg,
-      category: 'react-node-mysql',
-      categoryTag: 'Production • Enterprise',
-      year: '2026',
-      tags: ['React', 'Node.js', 'Express', 'MySQL', 'Sequelize'],
-      summary: 'Enterprise Laboratory Information Management System for tracking genomic sequencing workflows, samples, and reports.',
-      description: 'A production full-stack LIMS platform engineered at Oneomics Private Limited to manage 120+ sample bulk uploads, quality control (QC) validation, workflow tracking, sequencing status management, and automated dynamic Excel report exports.',
-      features: [
-        '120+ sample bulk upload and automated QC validation',
-        'Genomic sample tracking and sequencing status management',
-        'Role-based access control and employee management system',
-        'Relational database architecture powered by MySQL & Sequelize',
-        'Automated real-time reporting with dynamic Excel export generation'
-      ],
-      github: 'https://github.com/Anbuswetha1818',
-      demo: 'https://delphina.in'
-    },
-    {
       id: 2,
-      title: 'Brochure Builder Studio',
-      image: null,
-      category: 'react-canvas-tools',
-      categoryTag: 'Production • Design Studio',
-      year: '2026',
-      tags: ['React', 'Tailwind CSS', 'Canvas API', 'PDF Export'],
-      summary: 'Interactive design application supporting tri-fold and A4 flyer templates, image cropping, and dynamic PDF export.',
-      description: 'A creative production web studio built for designing marketing collateral. Features interactive tri-fold and A4 layout configurations, client-side image cropping and adjustment, real-time canvas rendering, and high-resolution PDF generation.',
-      features: [
-        'Created responsive tri-fold and standard A4 flyer templates',
-        'Interactive client-side image upload and precision cropping',
-        'Real-time WYSIWYG live layout preview engine',
-        'High-resolution vector/bitmap PDF export ready for printing',
-        'Fast, fluid user interface deployed live on Vercel'
-      ],
-      github: 'https://github.com/Anbuswetha1818',
-      demo: 'https://brochure-studio-ten.vercel.app'
-    },
-    {
-      id: 3,
-      title: 'Thaimann Soil Analytics',
-      image: null,
-      category: 'react-geospatial',
-      categoryTag: 'Production • Agriculture',
-      year: '2026',
-      tags: ['React', 'Agro-Tech', 'Data Visualization', 'Mobile UI'],
-      summary: 'Interactive Agro-Climatic Zone soil plots tracking 13+ agricultural parameters with mobile-friendly UI.',
-      description: 'An agricultural data visualization platform built to assist farmers and scientists in monitoring soil health across agro-climatic zones. Displays interactive spatial plots tracking 13+ physical and chemical parameters.',
-      features: [
-        'Developed interactive Agro-Climatic Zone soil plots for 13+ parameters',
-        'Mobile-friendly responsive UI designed for field accessibility',
-        'High-performance data filtering and visualization charts',
-        'Seamless API integration delivering real-time soil parameter measurements',
-        'Deployed to production at thaimann.co.in'
-      ],
-      github: 'https://github.com/Anbuswetha1818',
-      demo: 'https://thaimann.co.in'
-    },
-    {
-      id: 4,
-      title: 'Ancestry Analysis Platform',
-      image: null,
-      category: 'nextjs-genomics',
-      categoryTag: 'Next.js • Genomics',
-      year: '2026',
-      tags: ['Next.js', 'Genomics', 'VCF QC', 'PDF Reports'],
-      summary: 'Genomic ancestry profiling application built with Next.js featuring a 1.15M-SNP reference panel and VCF QC.',
-      description: 'A computational genomics application engineered to analyze user DNA data. Incorporates a reference panel of 1.15 million single-nucleotide polymorphisms (SNPs), performs automated human genome build detection (GRCh37/GRCh38), rigorous VCF file quality checks, and exports downloadable ancestry reports.',
-      features: [
-        '1.15M-SNP reference panel integration for genetic ancestry mapping',
-        'Automated genome build detection and VCF quality control (QC)',
-        'High-throughput parsing of genomic variation data',
-        'Automated PDF report generation summarizing ancestry breakdown',
-        'Server-side rendering and rapid load times powered by Next.js'
-      ],
-      github: 'https://github.com/Anbuswetha1818',
-      demo: ''
-    },
-    {
-      id: 5,
       title: 'EnergyStream AI - Energy Forecasting',
       image: energystreamAiImg,
       category: 'django-python',
@@ -108,18 +27,18 @@ const Projects = () => {
       demo: 'https://energystream-ai.onrender.com'
     },
     {
-      id: 6,
-      title: 'InternFlow (SIMS)',
+      id: 1,
+      title: 'InternFlow',
       image: internflowImg,
       category: 'react-django-mysql',
-      categoryTag: 'Full Stack • Enterprise',
+      categoryTag: 'Full Stack',
       year: '2026',
-      tags: ['React', 'Django REST', 'PostgreSQL', 'JWT', 'RBAC'],
-      summary: 'Corporate workspace platform to manage intern attendance, payroll, and role-based assignments.',
+      tags: ['React', 'Django REST', 'PostgreSQL', 'JWT'],
+      summary: 'Corporate workspace platform to manage intern attendance, payroll, and task assignments.',
       description: 'A comprehensive portal designed during the internship at VDart Academy to streamline intern tracking. Features secure JSON Web Token authentication, role-based dashboards (Admin, Staff, Intern), detailed attendance logs, automatic payroll calculation, and progress charts.',
       features: [
-        'Secure JWT Authentication & Role-Based Access Control',
-        'Role-Based Dashboards & Administrative Controls',
+        'Secure JWT Authentication & Password Encryption',
+        'Role-Based Dashboards & Access Controls',
         'Attendance tracking with Check-In/Check-Out logs',
         'Automatic payroll and stipend calculating engine',
         'Task management board and intern progress statistics'
@@ -147,62 +66,28 @@ const Projects = () => {
         {/* Project Grid */}
         <div className="row gy-4" data-aos="fade-up" data-aos-delay="300">
           {projectsData.map(project => (
-            <div className="col-lg-4 col-md-6" key={project.id}>
+            <div className="col-lg-6 col-md-6" key={project.id}>
               <div className="portfolio-card">
                 <div className="portfolio-image-container">
                   {project.image ? (
                     <img src={project.image} alt={project.title} />
                   ) : (
                     /* Native SVG graphic mockup */
-                    <svg viewBox="0 0 160 100" width="100%" height="100%" style={{ background: 'linear-gradient(135deg, #0b132b, #1c2541)', border: '1px solid rgba(255,255,255,0.06)' }}>
+                    <svg viewBox="0 0 160 100" width="100%" height="100%" style={{ background: 'linear-gradient(135deg, #1c1c1c, #2a2a2a)', border: '1px solid rgba(255,255,255,0.05)' }}>
                       <defs>
                         <linearGradient id={`grad-${project.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
                           <stop offset="0%" stopColor="#2563EB" />
                           <stop offset="100%" stopColor="#38BDF8" />
                         </linearGradient>
                       </defs>
-                      <rect x="8" y="8" width="144" height="84" rx="6" fill="#080c16" stroke={`url(#grad-${project.id})`} strokeWidth="1" />
-                      <circle cx="20" cy="18" r="2.5" fill="#ef4444" />
-                      <circle cx="27" cy="18" r="2.5" fill="#f59e0b" />
-                      <circle cx="34" cy="18" r="2.5" fill="#10b981" />
-                      
-                      {project.id === 2 ? (
-                        <>
-                          <rect x="18" y="28" width="38" height="54" rx="2" fill="#111827" stroke="#38bdf8" strokeWidth="0.8" />
-                          <rect x="61" y="28" width="38" height="54" rx="2" fill="#111827" stroke="#38bdf8" strokeWidth="0.8" />
-                          <rect x="104" y="28" width="38" height="54" rx="2" fill="#111827" stroke="#38bdf8" strokeWidth="0.8" />
-                          <line x1="24" y1="38" x2="50" y2="38" stroke="#38bdf8" strokeWidth="1.2" />
-                          <line x1="24" y1="45" x2="44" y2="45" stroke="#64748b" strokeWidth="1" />
-                          <line x1="67" y1="38" x2="93" y2="38" stroke="#38bdf8" strokeWidth="1.2" />
-                          <line x1="67" y1="45" x2="87" y2="45" stroke="#64748b" strokeWidth="1" />
-                          <line x1="110" y1="38" x2="136" y2="38" stroke="#38bdf8" strokeWidth="1.2" />
-                          <line x1="110" y1="45" x2="130" y2="45" stroke="#64748b" strokeWidth="1" />
-                        </>
-                      ) : project.id === 3 ? (
-                        <>
-                          <path d="M 22 72 Q 50 40 80 58 T 138 38" fill="none" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" />
-                          <circle cx="80" cy="58" r="3.5" fill="#22c55e" />
-                          <circle cx="138" cy="38" r="3.5" fill="#38bdf8" />
-                          <rect x="22" y="30" width="52" height="18" rx="3" fill="#111827" stroke="#22c55e" strokeWidth="0.7" />
-                          <text x="26" y="42" fill="#86efac" fontSize="7" fontFamily="sans-serif">13+ Soil Params</text>
-                        </>
-                      ) : project.id === 4 ? (
-                        <>
-                          <path d="M 25 70 C 50 30, 75 75, 105 35 C 120 20, 135 55, 142 45" fill="none" stroke="#818cf8" strokeWidth="2" strokeLinecap="round" />
-                          <line x1="45" y1="50" x2="55" y2="58" stroke="#c084fc" strokeWidth="1.5" />
-                          <line x1="72" y1="62" x2="80" y2="52" stroke="#c084fc" strokeWidth="1.5" />
-                          <line x1="95" y1="42" x2="105" y2="38" stroke="#c084fc" strokeWidth="1.5" />
-                          <rect x="22" y="28" width="58" height="16" rx="3" fill="#111827" stroke="#818cf8" strokeWidth="0.7" />
-                          <text x="26" y="39" fill="#c7d2fe" fontSize="6.5" fontFamily="sans-serif">1.15M-SNP Panel</text>
-                        </>
-                      ) : (
-                        <>
-                          <rect x="20" y="35" width="120" height="40" rx="3" fill="#1c1c1c" />
-                          <circle cx="40" cy="55" r="10" fill={`url(#grad-${project.id})`} opacity="0.8" />
-                          <rect x="60" y="48" width="50" height="4" rx="2" fill="#d9d9d9" opacity="0.3" />
-                          <rect x="60" y="58" width="70" height="4" rx="2" fill="#d9d9d9" opacity="0.15" />
-                        </>
-                      )}
+                      <rect x="10" y="10" width="140" height="80" rx="6" fill="#141414" stroke={`url(#grad-${project.id})`} strokeWidth="1" />
+                      <circle cx="25" cy="22" r="3" fill="#2563EB" />
+                      <circle cx="33" cy="22" r="3" fill="#38BDF8" />
+                      <circle cx="41" cy="22" r="3" fill="#389e0d" />
+                      <rect x="20" y="35" width="120" height="40" rx="3" fill="#1c1c1c" />
+                      <circle cx="40" cy="55" r="10" fill={`url(#grad-${project.id})`} opacity="0.8" />
+                      <rect x="60" y="48" width="50" height="4" rx="2" fill="#d9d9d9" opacity="0.3" />
+                      <rect x="60" y="58" width="70" height="4" rx="2" fill="#d9d9d9" opacity="0.15" />
                     </svg>
                   )}
                   
