@@ -1,11 +1,32 @@
 import React, { useState } from 'react';
 import energystreamAiImg from '../assets/energystream_ai.png';
 import internflowImg from '../assets/internflow.png';
+import oneomicsLimsImg from '../assets/oneomics_lims.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = [
+    {
+      id: 3,
+      title: 'ONEOMICS-LIMS',
+      image: oneomicsLimsImg,
+      category: 'react-node-mysql',
+      categoryTag: 'Enterprise / Full Stack',
+      year: '2026',
+      tags: ['React', 'Node.js', 'Express', 'MySQL', 'Sequelize'],
+      summary: 'Laboratory Information Management System for tracking genomic sequencing workflows, samples, and reports.',
+      description: 'A comprehensive full-stack enterprise LIMS platform built for ONEOMICS PRIVATE LIMITED to manage laboratory operations, sequencing datasets (such as metabarcoding workflows), customer project records, internal employee attendance, and automated data exports.',
+      features: [
+        'Genomic sample tracking and sequencing status management',
+        'Role-based access control and employee management system',
+        'Relational database architecture powered by MySQL & Sequelize',
+        'Automated real-time reporting with dynamic Excel export generation',
+        'Secure RESTful APIs built with Node.js and Express'
+      ],
+      github: 'https://github.com/Anbuswetha1818',
+      demo: ''
+    },
     {
       id: 2,
       title: 'EnergyStream AI - Energy Forecasting',
@@ -66,7 +87,7 @@ const Projects = () => {
         {/* Project Grid */}
         <div className="row gy-4" data-aos="fade-up" data-aos-delay="300">
           {projectsData.map(project => (
-            <div className="col-lg-6 col-md-6" key={project.id}>
+            <div className="col-lg-4 col-md-6" key={project.id}>
               <div className="portfolio-card">
                 <div className="portfolio-image-container">
                   {project.image ? (
@@ -172,9 +193,11 @@ const Projects = () => {
               <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="btn-getstarted text-white py-2 px-4 border-0" style={{ borderRadius: '50px', background: 'var(--accent-color)', fontSize: '14px', fontWeight: '600' }}>
                 <i className="bi bi-github me-2"></i> GitHub Repo
               </a>
-              <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer" className="btn-getstarted py-2 px-4 border-0" style={{ borderRadius: '50px', background: 'rgba(0,0,0,0.05)', color: 'var(--heading-color)', fontSize: '14px', fontWeight: '600' }}>
-                <i className="bi bi-box-arrow-up-right me-2"></i> Demo Link
-              </a>
+              {selectedProject.demo ? (
+                <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer" className="btn-getstarted py-2 px-4 border-0" style={{ borderRadius: '50px', background: 'rgba(0,0,0,0.05)', color: 'var(--heading-color)', fontSize: '14px', fontWeight: '600' }}>
+                  <i className="bi bi-box-arrow-up-right me-2"></i> Demo Link
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

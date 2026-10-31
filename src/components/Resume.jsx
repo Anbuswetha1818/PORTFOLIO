@@ -29,8 +29,8 @@ const Resume = () => {
 
               <div className="experience-cards">
                 
-                {/* VDart Academy */}
-                <div className="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+                {/* ONEOMICS PRIVATE LIMITED */}
+                <div className="exp-card featured" data-aos="zoom-in" data-aos-delay="250">
                   <div className="card-header">
                     <div className="company-logo">
                       <i className="bi bi-buildings"></i>
@@ -38,9 +38,38 @@ const Resume = () => {
                     <div className="period-badge">Current</div>
                   </div>
                   <div className="card-body">
+                    <h3>Full Stack Developer</h3>
+                    <p className="company-name">ONEOMICS PRIVATE LIMITED • Tiruchirappalli, TN</p>
+                    <span className="duration">August 2026 - Present</span>
+                    <p className="description">
+                      Developing the Laboratory Information Management System (ONEOMICS-LIMS) and engineering full-stack modules for genomics workflows.
+                    </p>
+                    <ul className="small ps-3 mb-3" style={{ color: 'color-mix(in srgb, var(--default-color), transparent 30%)' }}>
+                      <li>Engineered full-stack Laboratory Information Management System (ONEOMICS-LIMS) with React, Node.js, Express, and MySQL.</li>
+                      <li>Developed RESTful APIs for sample sequencing workflows (metabarcoding), attendance tracking, and dynamic Excel exports.</li>
+                      <li>Structured relational databases via Sequelize and HeidiSQL, optimizing queries for lab metadata.</li>
+                    </ul>
+                    <div className="skills-tags">
+                      <span className="skill-tag">React</span>
+                      <span className="skill-tag">Node.js</span>
+                      <span className="skill-tag">Express</span>
+                      <span className="skill-tag">MySQL</span>
+                      <span className="skill-tag">REST APIs</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* VDart Academy */}
+                <div className="exp-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div className="card-header">
+                    <div className="company-logo">
+                      <i className="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div className="card-body">
                     <h3>Full Stack Developer Intern</h3>
                     <p className="company-name">VDart Academy • Tiruchirappalli, TN</p>
-                    <span className="duration">June 2026 - Present</span>
+                    <span className="duration">June 2026 - August 2026</span>
                     <p className="description">
                       Developing the Student Intern Management System (SIMS) and collaborating on end-to-end features, dashboard implementations, and deployments.
                     </p>

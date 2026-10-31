@@ -51,8 +51,8 @@ const About = () => {
                   <p>Projects</p>
                 </div>
                 <div className="stat-item">
-                  <h4>2</h4>
-                  <p>Internships</p>
+                  <h4>3</h4>
+                  <p>Experiences</p>
                 </div>
                 <div className="stat-item">
                   <h4>6.9</h4>
@@ -103,7 +103,7 @@ const About = () => {
                   <i className="bi bi-briefcase"></i>
                   <div className="detail-content">
                     <span>Experience</span>
-                    <strong>Full Stack Intern</strong>
+                    <strong>Full Stack Developer</strong>
                   </div>
                 </div>
 
