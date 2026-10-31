@@ -5,11 +5,11 @@ const About = () => {
 
 
   const skillsData = [
-    { name: 'React & JavaScript', percent: '90%' },
-    { name: 'Python & Django (DRF, Flask)', percent: '90%' },
-    { name: 'MySQL & SQLite', percent: '85%' },
-    { name: 'ML & AI (Scikit-learn, Pandas, NumPy)', percent: '80%' },
-    { name: 'Tools (Git, GitHub, Postman, Vite)', percent: '85%' }
+    { name: 'React.js, Next.js & JavaScript', percent: '92%' },
+    { name: 'Node.js, Express & Django REST Framework', percent: '90%' },
+    { name: 'Python & Flask (AI / ML Integrations)', percent: '88%' },
+    { name: 'MySQL, PostgreSQL & Sequelize', percent: '88%' },
+    { name: 'REST APIs, JWT & Role-Based Access Control', percent: '90%' }
   ];
 
   return (
@@ -18,7 +18,7 @@ const About = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
-          Software Engineering fresher skilled in full-stack development, agile methodologies, and machine learning.
+          Full Stack Developer with industry experience building web applications using Python, React, Next.js, Node.js, and REST APIs.
         </p>
       </div>
 
@@ -47,7 +47,7 @@ const About = () => {
 
               <div className="profile-stats">
                 <div className="stat-item">
-                  <h4>3+</h4>
+                  <h4>5+</h4>
                   <p>Projects</p>
                 </div>
                 <div className="stat-item">
@@ -90,10 +90,10 @@ const About = () => {
                 <div className="section-tag">About Me</div>
                 <h2>Designing Scalable Backends & Fluid Frontends</h2>
                 <p>
-                  Motivated Software Engineering fresher skilled in full-stack development, agile methodologies, and cloud technologies. Strong problem-solving ability with hands-on experience in Python, React, and REST APIs.
+                  Motivated Full Stack Developer with industry experience building web applications using Python, React, Next.js, Node.js, and REST APIs. Skilled in agile methodologies and cloud technologies, with strong problem-solving ability.
                 </p>
                 <p>
-                  I enjoy developing end-to-end applications, from UI/UX design to robust server architectures and database normalization. Having built full-stack solutions like InternFlow and machine learning models for energy forecasting, I am well-prepared to tackle real-world development challenges.
+                  I engineer production-grade full-stack solutions, from responsive client interfaces with React and Next.js to robust backend microservices using Node.js, Express, Django REST Framework, and relational databases (MySQL, PostgreSQL). Having delivered live production systems including Laboratory Information Management Systems (ONEOMICS-LIMS), soil analytics platforms (Thaimann), and high-accuracy AI forecasting models (EnergyStream AI), I bring proven hands-on industry expertise to solve real-world development challenges.
                 </p>
               </div>
 
@@ -103,7 +103,7 @@ const About = () => {
                   <i className="bi bi-briefcase"></i>
                   <div className="detail-content">
                     <span>Experience</span>
-                    <strong>Full Stack Developer</strong>
+                    <strong>Full Stack Developer (Industry Experienced)</strong>
                   </div>
                 </div>
 

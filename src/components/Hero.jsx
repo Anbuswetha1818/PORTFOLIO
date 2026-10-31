@@ -15,7 +15,8 @@ const Hero = () => {
     const typed = new Typed(el.current, {
       strings: [
         'Full Stack Developer',
-        'Python Developer',
+        'React & Next.js Engineer',
+        'Python & Node.js Developer',
         'Software Engineer'
       ],
       typeSpeed: 60,

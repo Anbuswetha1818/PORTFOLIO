@@ -49,7 +49,7 @@ const Footer = () => {
               <span className="sitename">Anbu Swetha B</span>
             </a>
             <p>
-              Software Engineering fresher skilled in full-stack development, agile methodologies, and machine learning. Experienced with React, Python, Django, and MySQL.
+              Motivated Full Stack Developer with industry experience building web applications using Python, React, Next.js, Node.js, and REST APIs. Experienced in scalable backends and modern frontend architectures.
             </p>
             <div className="social-links d-flex mt-4">
               <a href="https://github.com/Anbuswetha1818" target="_blank" rel="noopener noreferrer" title="GitHub">
@@ -83,10 +83,10 @@ const Footer = () => {
           <div className="col-lg-2 col-6 footer-links">
             <h4>Tech Stack</h4>
             <ul>
-              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>React (SPA)</a></li>
-              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>Django REST</a></li>
-              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>Python Core</a></li>
-              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>MySQL DB</a></li>
+              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>React & Next.js</a></li>
+              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>Node & Express</a></li>
+              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>Python & Django</a></li>
+              <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>MySQL & Postgres</a></li>
               <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>Machine Learning</a></li>
             </ul>
           </div>

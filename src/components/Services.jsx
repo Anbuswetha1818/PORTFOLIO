@@ -5,37 +5,37 @@ const Services = () => {
     {
       icon: <i className="bi bi-laptop"></i>,
       title: 'Full Stack Development',
-      desc: 'Building responsive, scalable, and secure web applications with React frontends and Django or Flask backend servers.',
+      desc: 'Building responsive, scalable, and secure web applications with React & Next.js frontends and Node.js or Django/Flask backend servers.',
       featured: true
     },
     {
       icon: <i className="bi bi-code-slash"></i>,
-      title: 'Frontend React Apps',
-      desc: 'Creating interactive user interfaces using modern React state management, hooks, and responsive Bootstrap layouts.',
+      title: 'Frontend & Next.js Apps',
+      desc: 'Creating interactive user interfaces using React, Next.js (SSR), modern component architectures, and mobile-friendly responsive designs.',
       featured: false
     },
     {
       icon: <i className="bi bi-server"></i>,
       title: 'RESTful API Engineering',
-      desc: 'Designing and integrating modular REST endpoints using Django REST Framework with secure JWT authentication policies.',
+      desc: 'Designing and integrating modular REST endpoints using Node.js/Express and Django REST Framework with secure JWT authentication and RBAC.',
       featured: false
     },
     {
       icon: <i className="bi bi-database"></i>,
-      title: 'Database Normalization',
-      desc: 'Architecting relational schemas in MySQL and SQLite, normalising tables, and optimizing queries for fast performance.',
+      title: 'Relational Database Engineering',
+      desc: 'Architecting relational schemas in MySQL and PostgreSQL, utilizing Sequelize ORM, and optimizing queries for high-throughput workflows.',
       featured: false
     },
     {
       icon: <i className="bi bi-cpu"></i>,
       title: 'Machine Learning & AI',
-      desc: 'Training regression and classification models (e.g. LSTM models for load forecasting) using Scikit-learn, Pandas, and NumPy.',
+      desc: 'Training regression and classification models (e.g. LSTM models on 2M+ records) using Scikit-learn, Pandas, NumPy, and Flask inference APIs.',
       featured: false
     },
     {
       icon: <i className="bi bi-git"></i>,
-      title: 'Git Version Control',
-      desc: 'Managing codebase iterations with Git, maintaining branches, handling merge conflicts, and conducting code reviews on GitHub.',
+      title: 'Version Control & Deployment',
+      desc: 'Managing codebase iterations with Git, maintaining branches, handling code reviews, and deploying production builds to Vercel and cloud platforms.',
       featured: false
     }
   ];

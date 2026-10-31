@@ -22,8 +22,8 @@ const Resume = () => {
               <div className="section-header" data-aos="fade-right" data-aos-delay="200">
                 <div className="header-content">
                   <span className="section-badge">Experience</span>
-                  <h2>Professional Journey</h2>
-                  <p>My internship experiences in full-stack development and software engineering.</p>
+                  <h2>Professional Experience</h2>
+                  <p>My industry and internship experience in full-stack engineering and software development.</p>
                 </div>
               </div>
 
@@ -35,21 +35,23 @@ const Resume = () => {
                     <div className="company-logo">
                       <i className="bi bi-buildings"></i>
                     </div>
-                    <div className="period-badge">Current</div>
+                    <div className="period-badge">Industry Exp</div>
                   </div>
                   <div className="card-body">
                     <h3>Full Stack Developer</h3>
-                    <p className="company-name">ONEOMICS PRIVATE LIMITED • Tiruchirappalli, TN</p>
-                    <span className="duration">August 2026 - Present</span>
+                    <p className="company-name">Oneomics Private Limited • Tiruchirappalli, Tamil Nadu</p>
+                    <span className="duration">Aug 2026 - Oct 2026</span>
                     <p className="description">
-                      Developing the Laboratory Information Management System (ONEOMICS-LIMS) and engineering full-stack modules for genomics workflows.
+                      Engineered enterprise genomic web applications, laboratory information platforms, and client-facing digital products using Next.js, React, Node.js, and MySQL.
                     </p>
                     <ul className="small ps-3 mb-3" style={{ color: 'color-mix(in srgb, var(--default-color), transparent 30%)' }}>
-                      <li>Engineered full-stack Laboratory Information Management System (ONEOMICS-LIMS) with React, Node.js, Express, and MySQL.</li>
-                      <li>Developed RESTful APIs for sample sequencing workflows (metabarcoding), attendance tracking, and dynamic Excel exports.</li>
-                      <li>Structured relational databases via Sequelize and HeidiSQL, optimizing queries for lab metadata.</li>
+                      <li><strong>Ancestry Analysis:</strong> Built app (Next.js) with 1.15M-SNP reference panel, genome build detection, VCF QC, and PDF reports.</li>
+                      <li><strong>Thaimann:</strong> Developed interactive Agro-Climatic Zone soil plots (13+ parameters) with mobile-friendly UI (<a href="https://thaimann.co.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)' }}>thaimann.co.in</a>).</li>
+                      <li><strong>Brochure Builder:</strong> Created tri-fold and A4 flyer templates, image cropping, and PDF export (<a href="https://brochure-studio-ten.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)' }}>brochure-studio-ten.vercel.app</a>).</li>
+                      <li><strong>LIMS:</strong> Built with React, Node.js, MySQL: 120+ sample bulk upload, QC validation, workflow fixes (<a href="https://delphina.in" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)' }}>delphina.in</a>).</li>
                     </ul>
                     <div className="skills-tags">
+                      <span className="skill-tag">Next.js</span>
                       <span className="skill-tag">React</span>
                       <span className="skill-tag">Node.js</span>
                       <span className="skill-tag">Express</span>
@@ -65,23 +67,25 @@ const Resume = () => {
                     <div className="company-logo">
                       <i className="bi bi-laptop"></i>
                     </div>
+                    <div className="period-badge">Internship</div>
                   </div>
                   <div className="card-body">
                     <h3>Full Stack Developer Intern</h3>
-                    <p className="company-name">VDart Academy • Tiruchirappalli, TN</p>
-                    <span className="duration">June 2026 - August 2026</span>
+                    <p className="company-name">VDart Academy • Tiruchirappalli, Tamil Nadu</p>
+                    <span className="duration">June 2026 - Aug 2026</span>
                     <p className="description">
-                      Developing the Student Intern Management System (SIMS) and collaborating on end-to-end features, dashboard implementations, and deployments.
+                      Developed full-stack features and student/intern management modules with role-based security and relational database schemas.
                     </p>
                     <ul className="small ps-3 mb-3" style={{ color: 'color-mix(in srgb, var(--default-color), transparent 30%)' }}>
                       <li>Developed a full-stack Student Intern Management System (SIMS) using React, Django REST Framework, PostgreSQL, and JWT authentication with role-based access control.</li>
-                      <li>Building role-based dashboards, integrating APIs, and collaborating on end-to-end feature development from UI design to deployment.</li>
+                      <li>Built role-based dashboards, integrated APIs, and collaborated on end-to-end feature development from UI design to deployment.</li>
                     </ul>
                     <div className="skills-tags">
                       <span className="skill-tag">React</span>
-                      <span className="skill-tag">Django REST</span>
+                      <span className="skill-tag">Django REST Framework</span>
                       <span className="skill-tag">PostgreSQL</span>
                       <span className="skill-tag">JWT</span>
+                      <span className="skill-tag">RBAC</span>
                     </div>
                   </div>
                 </div>
@@ -92,10 +96,11 @@ const Resume = () => {
                     <div className="company-logo">
                       <i className="bi bi-laptop"></i>
                     </div>
+                    <div className="period-badge">Internship</div>
                   </div>
                   <div className="card-body">
                     <h3>Python Intern</h3>
-                    <p className="company-name">NextGen Solutions • Cuddalore, TN</p>
+                    <p className="company-name">NextGen Solutions • Cuddalore, Tamil Nadu</p>
                     <span className="duration">Apr 2025 - May 2025</span>
                     <p className="description">
                       Developed database-driven Python applications using Object-Oriented Programming (OOP) and graphical interfaces.
@@ -148,7 +153,7 @@ const Resume = () => {
                       </p>
                       <div className="achievement">
                         <i className="bi bi-award"></i>
-                        <span>CGPA: 6.9</span>
+                        <span>CGPA: 6.9 • Graduation: April 2026</span>
                       </div>
                     </div>
                   </div>
@@ -202,10 +207,13 @@ const Resume = () => {
                       <h4>Relevant Coursework</h4>
                       <div className="certifications-list">
                         <div className="cert-item">
-                          <span className="cert-name">Data Structures & Algorithms</span>
+                          <span className="cert-name">Data Structures</span>
                         </div>
                         <div className="cert-item">
                           <span className="cert-name">Object-Oriented Programming (OOP)</span>
+                        </div>
+                        <div className="cert-item">
+                          <span className="cert-name">Analysis and Design of Algorithms</span>
                         </div>
                         <div className="cert-item">
                           <span className="cert-name">Database Management Systems (DBMS)</span>
