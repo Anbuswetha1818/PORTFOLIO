@@ -132,7 +132,7 @@ const Projects = () => {
         {/* Bottom Callout */}
         <div className="portfolio-bottom text-center mt-5" data-aos="fade-up" data-aos-delay="400">
           <h3>Like what you see?</h3>
-          <p className="mb-4 text-muted">I am always looking for challenging Full Stack development or Software Engineering roles.</p>
+          <p className="mb-4">I am always looking for challenging Full Stack development or Software Engineering roles.</p>
           <a href="#contact" className="btn-getstarted text-white py-2 px-4" style={{ borderRadius: '50px', background: 'var(--accent-color)', fontSize: '14px', fontWeight: '600' }}>
             Let's Work Together
           </a>

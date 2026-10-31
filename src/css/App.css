@@ -4511,8 +4511,16 @@ body {
 [data-theme='dark'] .timeline-content .description,
 [data-theme='dark'] .exp-card .description,
 [data-theme='dark'] .service-item p,
-[data-theme='dark'] .cert-card p {
+[data-theme='dark'] .cert-card p,
+[data-theme='dark'] .portfolio .portfolio-bottom p,
+[data-theme='dark'] .portfolio-bottom p,
+[data-theme='dark'] .text-muted {
   color: #94a3b8 !important;
+}
+
+[data-theme='dark'] .portfolio .portfolio-bottom h3,
+[data-theme='dark'] .portfolio-bottom h3 {
+  color: #ffffff !important;
 }
 
 [data-theme='dark'] .header {
